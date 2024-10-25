@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Thực tập fetch</title>
+    <link rel="stylesheet" href="css/c1.css">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/transitions.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/color.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/user.css">
+	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <header id="tg-header" class="tg-header tg-haslayout">
+        <div class="tg-topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <ul class="tg-addnav">
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i class="icon-envelope"></i>
+                                    <em>Liên hệ</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i class="icon-question-circle"></i>
+                                    <em>Hỗ trợ</em>
+                                </a>
+                            </li>
+                        </ul>
+                    
+                        <!-- Dropdown User Login -->
+                        <div class="dropdown tg-userlogin">
+                            <!-- Trigger Dropdown (Avatar and Username) -->
+                            <a class="dropdown-toggle d-flex align-items-center" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <figure class="mb-0 me-2">
+                                    <img src="images/tải xuống.png" alt="User Avatar" width="40" height="40" style="border-radius: 50%; border: 2px solid #007bff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);">
+                                </figure>
+                                <span class="text-primary fw-bold">Tài khoản</span>
+                            </a>
+                        
+                            <!-- Dropdown Menu -->
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                <li><a class="dropdown-item" href="login.html">Đăng nhập</a></li>
+                                <li><a class="dropdown-item" href="quenmk.html">Quên mật khẩu</a></li>
+                                <li><a class="dropdown-item" href="register.html">Đăng kí thành viên</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                                <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
+                                <li><a class="dropdown-item" href="#">Cập nhật hồ sơ</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Đơn hàng</a></li>
+                                <li><a class="dropdown-item" href="#">Đơn hàng đã mua</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tg-middlecontainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <strong class="tg-logo"><a href="index.html"><img src="images/flogo.png" alt="company name here"></a></strong>
+                        <div class="tg-wishlistandcart">
+                            <div class="dropdown tg-themedropdown tg-wishlistdropdown">
+                                <a href="javascript:void(0);" id="tg-wishlisst" class="tg-btnthemedropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="tg-themebadge">3</span>
+                                    <i class="icon-heart"></i>
+                                    <span>Yêu thích</span>
+                                </a>
+                                <div class="dropdown-menu tg-themedropdownmenu" aria-labelledby="tg-wishlisst">
+                                    <div class="tg-description"><p>Không có sản phẩm nào được thêm vào danh sách yêu thích!</p></div>
+                                </div>
+                            </div>
+                            <div class="dropdown tg-themedropdown tg-minicartdropdown">
+                                <a href="javascript:void(0);" id="tg-minicart" class="tg-btnthemedropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="tg-themebadge">3</span>
+                                    <i class="icon-cart"></i>
+                                    <span>Giỏ hàng</span>
+                                </a>
+                                <div class="dropdown-menu tg-themedropdownmenu" aria-labelledby="tg-minicart">
+                                    <div class="tg-minicartbody">
+                                        <div class="tg-minicarproduct">
+                                            <figure>
+                                                <img src="images/products/img-01.jpg" alt="mô tả hình ảnh">
+                                            </figure>
+                                            <div class="tg-minicarproductdata">
+                                                <h5><a href="javascript:void(0);">Hội Chợ Bang Của Chúng Tôi Là Một Sự Kiện Tuyệt Vời</a></h5>
+                                                <h6><a href="javascript:void(0);">$ 12.15</a></h6>
+                                            </div>
+                                        </div>
+                                        <div class="tg-minicarproduct">
+                                            <figure>
+                                                <img src="images/products/img-02.jpg" alt="mô tả hình ảnh">
+                                            </figure>
+                                            <div class="tg-minicarproductdata">
+                                                <h5><a href="javascript:void(0);">Mang Tôi Đến Ánh Sáng</a></h5>
+                                                <h6><a href="javascript:void(0);">$ 12.15</a></h6>
+                                            </div>
+                                        </div>
+                                        <div class="tg-minicarproduct">
+                                            <figure>
+                                                <img src="images/products/img-03.jpg" alt="mô tả hình ảnh">
+                                            </figure>
+                                            <div class="tg-minicarproductdata">
+                                                <h5><a href="javascript:void(0);">Hãy Tin Tưởng Vào Linh Hồn Của Bạn</a></h5>
+                                                <h6><a href="javascript:void(0);">$ 12.15</a></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tg-minicartfoot">
+                                        <a class="tg-btnemptycart" href="javascript:void(0);">
+                                            <i class="fa fa-trash-o"></i>
+                                            <span >Xóa Giỏ Hàng</span>
+                                        </a>
+                                        <span class="tg-subtotal">Tổng phụ: <strong>35.78</strong></span>
+                                        <div class="tg-btns">
+                                            <a class="tg-btn tg-active" href="shoppingcart.html">Xem Giỏ Hàng</a>
+                                            <a class="tg-btn" href="">Thanh Toán</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="tg-searchbox">
+                            <form class="tg-formtheme tg-formsearch">
+                                <fieldset>
+                                    <input type="text" name="search" class="typeahead form-control" placeholder="Tìm kiếm theo tiêu đề, tác giả, từ khóa,...">
+                                    <button type="submit"><i class="icon-magnifier"></i></button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <a href="#top" class="icontop2">&#8657;</a>
+    <header id="header"> 
+        <a href="#spmoi"> Sản phẩm mới</a>
+        <a href="#spmoi"> Sản phẩm mới</a>
+        <a href="#sphot"> Sản phẩm nổi bật </a>
+        <a href="#bai_viet_moi"> Bài viết</a>
+        <a href="#binh_luan"> Phản hồi khách hàng</a>
+        <a href="#anh_dep">Ảnh đẹp</a>
+    </header>
+    <nav id="menu"> </nav>
+    <main>
+        <section id="spmoi">
+            <h2>Sản phẩm  mới <a class="icontop" href="#top">&#8679;</a> </h2>
+            <div id="data"></div> 
+        </section>
+        <section id="sphot">
+            <h2>Sản phẩm nổi bật  <a class="icontop" href="#top">&#8679;</a> </h2>
+            <div id="data"></div> 
+        </section>
+        <section id="bai_viet_moi">
+            <h2>Bài viết <a class="icontop" href="#top">&#8679;</a> </h2>
+            <div id="data"></div> 
+        </section>
+       
+    </main>
+</div>
+
+
+
+<footer id="tg-footer" class="tg-footer tg-haslayout">
+    <div class="tg-footerarea">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <ul class="tg-clientservices">
+                        <li class="tg-devlivery">
+                            <span class="tg-clientserviceicon"><i class="icon-rocket"></i></span>
+                            <div class="tg-titlesubtitle">
+                                <h3 style="font-size: 16px;">Giao Hàng Nhanh</h3>
+                                <p style="font-size: 14px;">Vận Chuyển Toàn Cầu</p>
+                            </div>
+                        </li>
+                        <li class="tg-discount">
+                            <span class="tg-clientserviceicon"><i class="icon-tag"></i></span>
+                            <div class="tg-titlesubtitle">
+                                <h3 style="font-size: 16px;">Giảm Giá Mở</h3>
+                                <p style="font-size: 14px;">Cung Cấp Giảm Giá Mở</p>
+                            </div>
+                        </li>
+                        <li class="tg-quality">
+                            <span class="tg-clientserviceicon"><i class="icon-leaf"></i></span>
+                            <div class="tg-titlesubtitle">
+                                <h3 style="font-size: 16px;">Đảm bảo chất lượng</h3>
+                                <p style="font-size: 14px;">Công Bố Công Việc Chất Lượng</p>
+                            </div>
+                        </li>
+                        
+                        <li class="tg-support">
+                            <span class="tg-clientserviceicon"><i class="icon-heart"></i></span>
+                            <div class="tg-titlesubtitle">
+                                <h3 style="font-size: 16px;">Hỗ Trợ 24/7</h3>
+                                <p style="font-size: 14px;">Phục Vụ Mọi Thời Điểm</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tg-threecolumns">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="tg-footercol">
+                            <strong class="tg-logo"><a href="javascript:void(0);"><img src="images/flogo.png" alt="mô tả hình ảnh"></a></strong>
+                            <ul class="tg-contactinfo">
+                                <li>
+                                    <i class="icon-apartment"></i>
+                                    <address>FPT POLYTECHNIC, Phân mềm Quang Trung, Quận 12 </address>
+                                </li>
+                                <li>
+                                    <i class="icon-phone-handset"></i>
+                                    <span>
+                                        <em>098772132</em>
+                                        <em>097682321</em>
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="icon-clock"></i>
+                                    <span>Phục Vụ 7 Ngày Một Tuần Từ 9am - 5pm</span>
+                                </li>
+                                <li>
+                                    <i class="icon-envelope"></i>
+                                    <span>
+                                        <em><a href="mailto:.com">support@gmail.com</a></em>
+                                        <em><a href="mailto:.com">info@gmail.com</a></em>
+                                    </span>
+                                </li>
+                            </ul>
+                            <ul class="tg-socialicons">
+                                <li class="tg-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                                <li class="tg-twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                                <li class="tg-linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+                                <li class="tg-googleplus"><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
+                                <li class="tg-rss"><a href="javascript:void(0);"><i class="fa fa-rss"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="tg-footercol tg-widget tg-widgetnavigation">
+                            <div class="tg-widgettitle">
+                                <h3>Thông Tin Vận Chuyển Và Hỗ Trợ</h3>
+                            </div>
+                            <div class="tg-widgetcontent">
+                                <ul>
+                                    <li><a href="javascript:void(0);">Điều Khoản Sử Dụng</a></li>
+                                    <li><a href="javascript:void(0);">Điều Khoản Bán Hàng</a></li>
+                                    <li><a href="javascript:void(0);">Trả Hàng</a></li>
+                                    <li><a href="javascript:void(0);">Bảo Mật</a></li>
+                                    <li><a href="javascript:void(0);">Cookies</a></li>
+                                    <li><a href="javascript:void(0);">Liên Hệ Chúng Tôi</a></li>
+                                    <li><a href="javascript:void(0);">Cộng Tác Viên Của Chúng Tôi</a></li>
+                                    <li><a href="javascript:void(0);">Tầm Nhìn &amp; Mục Tiêu</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="javascript:void(0);">Câu Chuyện Của Chúng Tôi</a></li>
+                                    <li><a href="javascript:void(0);">Gặp Gỡ Đội Ngũ Của Chúng Tôi</a></li>
+                                    <li><a href="javascript:void(0);">Câu Hỏi Thường Gặp</a></li>
+                                    <li><a href="javascript:void(0);">Lời Chứng Thực</a></li>
+                                    <li><a href="javascript:void(0);">Tham Gia Đội Ngũ Của Chúng Tôi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="tg-footercol tg-widget tg-widgettopsellingauthors">
+                            <div class="tg-widgettitle">
+                                <h3>Tác Giả Bán Chạy Nhất</h3>
+                            </div>
+                            <div class="tg-widgetcontent">
+                                <ul>
+                                    <li>
+                                        <figure><a href="javascript:void(0);"><img src="images/z5495860540567_763acea1fdbbd06cf2d06ec35ace3563.jpg" width="50px;" height="50px;" ,="mô tả hình ảnh"></a></figure>
+                                        <div class="tg-authornamebooks">
+                                            <h4><a href="javascript:void(0);">Vũ Quốc Huy</a></h4>
+                                            <p>25,000 Cuốn Sách Đã Xuất Bản</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure><a href="javascript:void(0);"><img src="images/tacgia_2.jpg" width="50px;" height="50px;", alt="mô tả hình ảnh"></a></figure>
+                                        <div class="tg-authornamebooks">
+                                            <h4><a href="javascript:void(0);">Nguyễn Ngọc Tư</a></h4>
+                                            <p>18,500 Cuốn Sách Đã Xuất Bản</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure><a href="javascript:void(0);"><img src="images/ToHoai.webp" width="50px;" height="50px;", alt="mô tả hình ảnh"></a></figure>
+                                        <div class="tg-authornamebooks">
+                                            <h4><a href="javascript:void(0);">Tô Hoài</a></h4>
+                                            <p>15,800 Cuốn Sách Đã Xuất Bản</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tg-newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <h4>Đăng Ký Nhận Bản Tin!</h4>
+                    <h5>Có thể được giảm giá, nhưng đó là điều đã xảy ra cùng lúc.</h5>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <form class="tg-formtheme tg-formnewsletter">
+                        <fieldset>
+                            <input type="email" name="email" class="form-control" placeholder="Nhập Địa Chỉ Email Của Bạn">
+                            <button type="button"><i class="icon-envelope"></i></button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>		
+<div class="tg-footerbar">
+    <a id="tg-btnbacktotop" class="tg-btnbacktotop" href="javascript:void(0);"><i class="icon-chevron-up"></i></a>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <span class="tg-paymenttype"><img src="images/paymenticon.png" alt="image description"></span>
+                <span class="tg-copyright">2024 All Rights Reserved By &copy; Book Library</span>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+</body>
+</html>
+<script type="module">
+import { lay_loai, lay_sp_moi, lay_sp_hot, lay_bai_viet_moi, lay_binh_luan } from './js/app.js';
+import {lay_anh_dep} from './js/app.js';
+let loai_html = await lay_loai(); 
+let sp_moi_html = await lay_sp_moi(10); 
+document.querySelector("#menu").innerHTML = loai_html;
+document.querySelector("#spmoi #data").innerHTML = sp_moi_html;
+document.querySelector("#sphot #data").innerHTML = await lay_sp_hot(10);
+document.querySelector("#bai_viet_moi #data").innerHTML = await lay_bai_viet_moi(5);
+document.querySelector("#binh_luan #data").innerHTML = await lay_binh_luan(4);
+//document.querySelector("#anh_dep #data").innerHTML = await lay_anh_dep("thanh");
+
+</script>
